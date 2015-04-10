@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Steve Tonneau</title>
+	<meta http-equiv="Content-Language" content="English" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.link').click(function(event) {
+                var $target = $(event.target);
+                if($target.is("li")) { //Si c'est une liste <li>
+                    if($target.hasClass('extern')) {
+                        window.location.href = this.id;
+                    } else {
+                        $('#corps_central').load(this.id);
+                        $('.actif').removeClass('actif');
+                        $target.addClass('actif');
+                    }
+                } else { //Si c'est un lien <a>
+                    $('#corps_central').load(this.href);
+                    $('.actif').removeClass('actif');
+                    $('#submission\\.html').addClass('actif');
+                }
+                return false; //empeche le lien d'aller sur la page
+            });
+
+            $('#corps_central').load("home.html");
+        });
+    </script>
+</head>
+
+<body>
+<div id="wrap">
+
+	<div id="header">
+		<h1><a href="#">Steve Tonneau</a></h1>
+		<h2>Engineer - Phd student</h2>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li class="link actif" id="home.html">Home</li>
+			<li><a href="./indexpubli.html">Publications</li>
+			<li class="link" id="contact.html">Contact</li>
+			<li class="link extern" id="./files/steve_tonneau_en.pdf">CV (pdf)</li>
+			<li><a href="./games.html">Games (personal)</a></li>
+			<li><a href="./index_fr.html">French version</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<div id="corps_central"> </div>
+		<div style="clear: both;"> </div>
+		<div id="footer">
+			Page design based on a <a href="http://www.free-css-templates.com/">Free CSS Template</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
