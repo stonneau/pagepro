@@ -1,0 +1,163 @@
+\documentclass{tccv}
+\usepackage[french]{babel}
+
+\begin{document}
+
+\part{Steve Tonneau}
+
+\section{Exp\'{e}rience de recherche}
+
+\begin{eventlist}
+
+\item{Depuis Novembre 2011}
+     {IRISA, Rennes, France}
+     {El\`{e}ve Doctorant}
+	 
+ \textbf{Planification de mouvements pour des personnages virtuels en environnements contraints}.
+ L'objectif de cette th\`{e}se est d'am\'{e}liorer l'autonomie de mouvement de personnages 3d pour des applications 
+ de type jeux vid\'{e}os. Pour ce faire on cherche \`{a} g\'{e}n\'{e}rer des animations cr\'{e}dibles qui leur permettent d' 
+ interagir de mani\`{e}re cr\'{e}dible avec des environnements complexes (t\^{a}ches d'atteinte, escalade...).
+
+\item{Depuis Novembre 2011}
+     {INSA, Rennes, France}
+     {Enseignements}
+
+-- Programmation fonctionnelle (Scheme);
+\\ -- Bases de donn\'{e}es;
+\\ -- Objective Caml.
+
+\end{eventlist}
+
+
+\section{Exp\'{e}rience dans l'industrie (3.5 ans)}
+
+\begin{eventlist}
+
+\item{Janvier 2010 -- Octobre 2011}
+     {Masa Group, Paris, France}
+     {Ing\'{e}nieur R\&T - Virtual Worlds}
+
+Projet Form : Animation automatique d'agents virtuels gr\^{a}ce au middleware \href{http://www.masagroup.net/products/masa-life/}{MasaLife}.
+Int\'{e}gration avec le syt\`{e}me d'animation \href{http://www.naturalmotion.com/products/morpheme/}{Morpheme} ainsi que l'outil de pathfinding
+\href{http://www.presagis.com/products_services/products/modeling-simulation/simulation/aiimplant/}{AI.implant} pour des d\'{e}monstrations techniques.
+
+\item{Juillet 2008 -- D\'{e}cembre 2009}
+     {Masa Group, Paris, France}
+     {Ing\'{e}nieur R\&T Engineer - Mod\'{e}lisateur}
+
+Projet Brain : MiddleWare d'intelligence artificielle pour les serious games (simulations d'entra\^{i}nement).
+\\ -- Architecte de la base de connaissances des agents;
+\\ -- Op\'{e}rations de maintenance sur le moteur d\'{e}cisionel;
+\\ -- Cr\'{e}ations de librairies de comportements pour diff\'{e}rentes d\'{e}monstrations.
+
+\item{Mars 2008 -- Juin 2008}
+     {Masa Group, Paris, France}
+     {Stagiaire - Mod\'{e}lisateur}
+
+Cr\'{e}ation d'un module d'analyse terrain pour la simulation militaire \href{http://www.masagroup.net/products/masa-sword/}{SWORD}.
+Analyse, synth\`{e}se puis mod\'{e}lisation des doctrines militaires.
+
+\item{Juillet 2006 -- Ao\^{u}t 2006}
+     {CIRAD, Montpellier, France}
+     {Stagaire - Analyse spatiale}
+
+Evaluation du syst\`{e}me de bases de donn\'{e}es \href{http://www.postgresql.org/}{PostgreSQL} et de son extension spatiale \href{http://postgis.net/}{PostGIS} dans
+le contexte des syst\`{e}mes d'information g\'{e}ographiques (SIG).
+
+\end{eventlist}
+
+
+\personal
+    [www.stevetonneau.fr]
+    {14, rue de Bertrand, 35000 Rennes, France}
+    {+33 (0) 671303668}
+    {stonneau@irisa.fr}
+
+\section{Formation}
+
+\begin{yearlist}
+ 
+\item[Dipl\^{o}me d'ing\'{e}nieur]{2005 -- 2008 }
+     {Informatique}
+     {INSA, Rennes, France}
+	 
+\item[Semestre \`{a} l'\'{e}tranger]{2005 -- 2008 }
+     {Master "Game design and Developement"}
+     {RIT, Rochester, USA -- \href{http://games.rit.edu/}{games.rit.edu}}
+
+\item[Deug mias]{2003 -- 2005}
+     {Math\'{e}matiques et informatique appliqu\'{e}es}
+     {Universit\'{e} Montpellier II, France}
+	 
+\end{yearlist}
+	
+\section{Comp\'{e}tences informatiques}
+
+\begin{factlist}
+
+\item{Moteurs}
+     {AIimplant (Pathfinding), Morpheme (Animation), MasaLife (AI), Unity, Ogre}
+	 
+\item{Languages}
+     {C++, Java, C\#, Prolog, Lua, Scheme, O-Caml}
+	 
+\item{Donn\'{e}es}
+     {PostgreSQL, PostGIS}
+
+\item{Version}
+     {SVN, GIT}
+
+\end{factlist}
+
+
+% \section{Public projects}
+
+% \begin{yearlist}
+
+% \item{2012}
+     % {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
+     % {Embedded devices programmer}
+
+% \item{2007}
+     % {tip (\href{http://tip.entidi.com/}{tip.entidi.com})}
+     % {PHP framework based on PEAR}
+
+% \item{2006}
+     % {adg (\href{http://adg.entidi.com/}{adg.entidi.com})}
+     % {Automatic drawing generation}
+
+% \item{2006}
+     % {gtk2panel (\href{http://gtk2panel.entidi.com/}{gtk2panel.entidi.com})}
+     % {Top panel menu in GTK+2}
+
+% \item{2004}
+     % {ntd (\href{http://ntd.entidi.com/}{ntd.entidi.com})}
+     % {General purpose libraries}
+
+% \end{yearlist}
+
+\section{Langues}
+
+\begin{factlist}
+\item{Fran\c{c}ais}{langue maternelle}
+\item{Anglais}{fluent}
+\item{Portugais}{bon}
+\item{Espagnol}{scolaire}
+\end{factlist}
+
+\section{Autres}
+\begin{factlist}
+
+\item{Sport}
+     {Rugby, Basket-Ball, Course \`{a} pied}
+	 
+\item{Voyages}
+     {Br\'{e}sil (3 ans), Etats-unis (6 mois), Canada, Mali, Cap Vert, Europe...}
+	 
+\item{Loisirs}
+     {Cinema, bande dessin\'{e}e, musiques}
+
+\end{factlist}
+
+
+\end{document}

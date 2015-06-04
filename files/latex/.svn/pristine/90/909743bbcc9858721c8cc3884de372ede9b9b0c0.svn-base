@@ -1,0 +1,173 @@
+﻿\documentclass{tccv}
+\usepackage[english]{babel}
+
+\begin{document}
+
+\part{Steve Tonneau}
+
+\section{Research experience}
+
+\begin{eventlist}
+
+\item{Since November 2011}
+     {IRISA, Rennes, France}
+     {Phd}
+	 
+ \textbf{Autonomous locomotion for virtual characters in constrained environments}.
+ This thesis objective is to improve the motion autonomy of virtual characters interacting with
+ complex environments. We consider acyclic motions, such as reaching or climbing tasks (as opposed to cyclic
+ motions such as walking or running), and propose new methods and heuristics to synthesize, in real-time, believable motions, based
+ on short-time contact planning.
+
+\item{Since November 2011}
+     {INSA, Rennes, France}
+     {Teachings}
+
+-- Functional programming (Scheme);
+\\ -- Databases;
+\\ -- Objective Caml programming language.
+
+\end{eventlist}
+
+
+\section{Engineer experience}
+
+\begin{eventlist}
+
+\item{January 2010 -- October 2011}
+     {Masa Group, Paris, France}
+     {R\&T Engineer - Virtual Worlds}
+
+Form project : AI-driven animation for 3d characters using the \href{http://www.masagroup.net/products/masa-life/}{MasaLife} AI middleware.
+Integration with \href{http://www.naturalmotion.com/products/morpheme/}{Morpheme} animation framework and
+\href{http://www.presagis.com/products_services/products/modeling-simulation/simulation/aiimplant/}{AI.implant} pathfinding
+solution within technical demonstrations.
+
+\item{July 2008 -- December 2009}
+     {Masa Group, Paris, France}
+     {R\&T Engineer - Behavior modeller}
+
+Brain project : Artificial Intelligence middleware for serious games.
+\\ -- Knowledge base designer;
+\\ -- Maintenance on the decisional engine;
+\\ -- Behavior libraries design for various demonstrations.
+
+\item{March 2008 -- June 2008}
+     {Masa Group, Paris, France}
+     {Internship - Behavior modeller}
+
+Terrain analysis for the military training simulation \href{http://www.masagroup.net/products/masa-sword/}{SWORD}. Analysis, synthesis and modelisation
+of military knowledge.
+
+\item{July 2006 -- August 2006}
+     {CIRAD, Montpellier, France}
+     {Internship - Spatial analysis}
+
+Evaluation of the \href{http://www.postgresql.org/}{PostgreSQL} database system and its \href{http://postgis.net/}{PostGIS} spatial extension in the
+context of geographic information system (GIS).
+
+\end{eventlist}
+
+
+\personal
+    [www.cpc.cx/7ad]
+    {14, rue de Bertrand, 35000 Rennes, France}
+    {+33 (0) 671303668}
+    {stonneau@irisa.fr}
+
+\section{Computer science skills}
+
+\begin{factlist}
+
+\item{Engines}
+     {AIimplant (Pathfinding), Morpheme (Animation), MasaLife (AI), Unity, Ogre}
+	 
+\item{Languages}
+     {C++, Java, C\#, Prolog, Lua, Scheme, O-Caml}
+	 
+\item{Data}
+     {PostgreSQL, PostGIS}
+
+\item{Version control}
+     {SVN, GIT}
+
+\end{factlist}
+
+
+\section{Education}
+
+\begin{yearlist}
+ 
+\item[Master's degree]{2005 -- 2008 }
+     {Engineer -- Computer Science}
+     {INSA, Rennes, France}
+	 
+\item[Abroad semester]{2005 -- 2008 }
+     {"Game design and Developement"}
+     {RIT, Rochester, USA -- \href{http://games.rit.edu/}{games.rit.edu}}
+
+\item[deug mias (Two year diploma)]{2003 -- 2005}
+     {Mathematics and Computer Sciences}
+     {University of Montpellier II, France}
+	 
+% \item[High school diploma]{1988 -- 1992}
+     % {Informatic engineer}
+     % {ITIS Castelli, Brescia}
+
+% \item{1987 -- 1988}
+     % {Classical gymnasium}
+     % {Seminario vescovile, Cremona}
+
+\end{yearlist}
+
+% \section{Public projects}
+
+% \begin{yearlist}
+
+% \item{2012}
+     % {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
+     % {Embedded devices programmer}
+
+% \item{2007}
+     % {tip (\href{http://tip.entidi.com/}{tip.entidi.com})}
+     % {PHP framework based on PEAR}
+
+% \item{2006}
+     % {adg (\href{http://adg.entidi.com/}{adg.entidi.com})}
+     % {Automatic drawing generation}
+
+% \item{2006}
+     % {gtk2panel (\href{http://gtk2panel.entidi.com/}{gtk2panel.entidi.com})}
+     % {Top panel menu in GTK+2}
+
+% \item{2004}
+     % {ntd (\href{http://ntd.entidi.com/}{ntd.entidi.com})}
+     % {General purpose libraries}
+
+% \end{yearlist}
+
+\section{Communication skills}
+
+\begin{factlist}
+\item{French}{native}
+\item{English}{fluent}
+\item{Portuguese}{good}
+\item{Spanish}{fair}
+\end{factlist}
+
+\section{Other}
+\begin{factlist}
+
+\item{Sports}
+     {Rugby, Basket-Ball, Running}
+	 
+\item{Trips}
+     {Brazil (3 years), USA (6 months), Canada, Mali, Cape Verde, western and eastern Europe...}
+	 
+\item{Hobbies}
+     {Cinema, comic strips, music}
+
+\end{factlist}
+
+
+\end{document}
