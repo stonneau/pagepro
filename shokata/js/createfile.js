@@ -64,6 +64,7 @@ var textFile = null,
     doLog(data);
     document.getElementById('loadsubs').value = ha.toString();
     alert("Sub Id: " + ha.toString());
+    loadSubs();
     //~ var link = document.getElementById('downloadlink');
     //~ link.href = makeTextFile(textbox.value);
     //~ link.style.display = 'block';

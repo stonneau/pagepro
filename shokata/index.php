@@ -5,14 +5,18 @@
 	<title>Styled Video Player with Subtitles - Mozilla</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/styles.css" />
-	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv-printshiv.min.js" type="text/javascript"></script><![endif]-->
+<!--
+	[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv-printshiv.min.js" type="text/javascript"></script><![endif]
+-->
 </head>
 <body>
 	<h1>Sintel</h1>
 	<figure id="videoContainer" data-fullscreen="false">
-		<video id="video" controls preload="metadata">
-			<source src="video/sintel-short.mp4" type="video/mp4">
-			<source src="video/sintel-short.webm" type="video/webm">
+		<video id="video" controls preload="metadata">			
+			<?php $name=$_GET['name']; if(empty($name)){$name='sintel-short';}
+				  $ext=$_GET['ext']; if(empty($ext)){$ext='webm';}
+				  echo '<source src="video/'.$name .'.'.$ext.'" type="video/'.$ext.'">'; 
+		     ?> 	
 			<track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-en.vtt" default>
 		</video>
 		<div id="video-controls" class="controls" data-state="hidden">
@@ -30,7 +34,9 @@
 			<button id="subtitles" type="button" data-state="subtitles">CC</button>
 		</div>
 		<figcaption>
+<!--
 			&copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a>
+-->
 		</figcaption>
 	</figure>
 	<textarea id="loadsubs">sintel-de</textarea> 
