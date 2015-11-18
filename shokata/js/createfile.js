@@ -54,11 +54,11 @@ var textFile = null,
   var create = document.getElementById('create'),
     textbox = document.getElementById('textbox');
 
-  create.addEventListener('click', function () { 
+  create.addEventListener('click', function () {
     var text = textbox.value;
     var ha = hashCode(text);
     var filename = ha.toString()+".vtt";
-    var str1 = "filename=../subtitles/vtt/" + filename; 
+    var str1 = "filename=../subtitles/vtt/" + javaScriptName + "/" + filename; 
     var data = str1 + "&data=" + text;
     //next you would initiate a XMLHTTPRequest as following (could be more advanced):
     doLog(data);

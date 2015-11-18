@@ -2,7 +2,7 @@
 <html lang="en-IE">
 <head>
 	<meta charset="utf-8" />
-	<title>Styled Video Player with Subtitles - Mozilla</title>
+	<title>Steve Shokata</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/styles.css" />
 <!--
@@ -10,12 +10,12 @@
 -->
 </head>
 <body>
-	<h1>Sintel</h1>
-	<figure id="videoContainer" data-fullscreen="false">
+	<h1>Add your own subtitles to the videos!</h1>
+	<figure id="videoContainer" height="500" data-fullscreen="false">
 		<video id="video" controls preload="metadata">			
-			<?php $name=$_GET['name']; if(empty($name)){$name='sintel-short';}
-				  $ext=$_GET['ext']; if(empty($ext)){$ext='webm';}
-				  echo '<source src="video/'.$name .'.'.$ext.'" type="video/'.$ext.'">'; 
+			<?php $name=$_GET['name']; if(empty($name)){$name='shokata_1';}
+				  echo '<source src="video/'.$name .'.mp4" type="video/mp4">'; 
+				  echo '<source src="video/'.$name .'.webm" type="video/webm">'; 
 		     ?> 	
 			<track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/sintel-en.vtt" default>
 		</video>
@@ -39,15 +39,24 @@
 -->
 		</figcaption>
 	</figure>
-	<textarea id="loadsubs">sintel-de</textarea> 
-	<button id="doLoadSub">loadSub</button>
-	<textarea id="textbox" rows="15" cols="100">Write subtitle here</textarea> 
-	<button id="create">Create file</button> <a download="info.txt" id="downloadlink" style="display: none">Download</a>
+	<div align="center">
+		<div class="box">
+			<textarea id="loadsubs">sintel-de</textarea> 
+			<button id="doLoadSub">loadSub</button>
+		</div>
+	</div>
+	<div align="center">
+		<div class="box">
+			<textarea id="textbox" rows="15" cols="50">Write subtitle here</textarea> 
+			<button id="create">Create file</button> <a download="info.txt" id="downloadlink" style="display: none">Download</a>
+		</div>
+	</div>
 	<script src="js/video-player.js"></script>
 	<script src="js/createfile.js"></script>
 	<script src="js/loadsub.js"></script>
 	<script type="text/javascript">
-       loadSubs();
+		var javaScriptName = "<?php echo $name; ?>";
+		loadSubs();
     </script>
 </body>
 </html>

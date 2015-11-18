@@ -38,7 +38,9 @@ figure {
 	margin:1.25rem auto;
 	padding:20px;
 	padding:1.051%;
+/*
 	background-color:#666;
+*/
 }
 figcaption {
 	display:block;
@@ -47,7 +49,23 @@ figcaption {
 	color:#fff;
 }
 video {
+	height:100%;
 	width:100%;
+}
+
+textarea#textbox{
+    max-width:600px;
+    max-height:200px;
+    rows:1000;
+}
+
+textarea#loadsubs{
+    cols:30;
+    rows:1;
+}
+label {display:block;}
+.box{
+    display:inline-block;
 }
 
 /* controls */
