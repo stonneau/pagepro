@@ -19,7 +19,8 @@ function updateTrack() {
 	track.label = "Test"; 
 	track.srclang = "en"; 
 	var tinput = document.getElementById('loadsubs').value;
-	track.src = "http://stevetonneau.fr/shokata/subtitles/vtt/"+javaScriptName+"/" + tinput + ".vtt";
+	track.src = "http://stevetonneau.fr/shokata/subtitles/vtt/"+javaScriptName+"/" + tinput + ".vtt";	
+	document.getElementById("address").innerHTML="<p>direct link to video: http://stevetonneau.fr/shokata/index.php?name="+javaScriptName+"&sub="+tinput+"</p>";
     track.addEventListener("load", function() { 
       for (var i = 0; i < vid.textTracks.length; i++)
       {
@@ -35,6 +36,7 @@ function loadSubs()
 {
 	readBOX();
 	updateTrack();
+	vidplay();
 };
 
 (function () {
