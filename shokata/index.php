@@ -14,6 +14,7 @@
 	<figure id="videoContainer" height="500" data-fullscreen="false">
 		<video id="video" controls preload="metadata">			
 			<?php $name=$_GET['name']; if(empty($name)){$name='shokata_1';}
+				  $sub=$_GET['sub']; if(empty($sub)){$sub=$name;}
 				  echo '<source src="video/'.$name .'.mp4" type="video/mp4">'; 
 				  echo '<source src="video/'.$name .'.webm" type="video/webm">'; 
 		     ?> 	
@@ -38,11 +39,35 @@
 			&copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a>
 -->
 		</figcaption>
-	</figure>
+	</figure>	
+	<div align="center">
+		<div class="box" id="address">
+			<?php
+				  echo '<p>direct link to video: http://stevetonneau.fr/shokata/index.php?name='.$name.'&sub='.$sub.'</p>'; 
+		     ?> 	
+		</div>
+	</div>
 	<div align="center">
 		<div class="box">
-			<textarea id="loadsubs">sintel-de</textarea> 
+			<?php
+				  echo '<textarea id="loadsubs">'.$sub .'</textarea>'; 
+		     ?> 	
 			<button id="doLoadSub">loadSub</button>
+		</div>
+	</div>
+	<div align="center">
+		<div class="box">	
+		<select id="selectvideo">
+			<?php
+				  $i = 1;	
+				  foreach (glob('./subtitles/vtt/*' , GLOB_ONLYDIR) as $value)
+				  {  
+					$i = $i +1;
+					echo '<option value="'.i.'">'.substr($value,16) .'</option>'; 
+				  }
+		     ?>
+		</select>
+		<button id="load_video">Load video</button>
 		</div>
 	</div>
 	<div align="center">
@@ -54,7 +79,19 @@
 	<script src="js/video-player.js"></script>
 	<script src="js/createfile.js"></script>
 	<script src="js/loadsub.js"></script>
-	<script type="text/javascript">
+	<script src="js/loadvideo.js"></script>
+	<script type="text/javascript">		
+    function vidplay() {
+       var video = document.getElementById("video");
+       if (video.paused) {
+          video.play();
+       } else {
+		  video.currentTime = 0;
+          video.play();
+       }
+    }
+</script>
+	<script type="text/javascript">		
 		var javaScriptName = "<?php echo $name; ?>";
 		loadSubs();
     </script>
