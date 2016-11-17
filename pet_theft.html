@@ -1,137 +1,137 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
-        <head>
-                <title>Pet Theft</title>
-                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        </head>
-        <body>
-                Hi there!<br/>
-				<br />
-				On this page you will find the first playable version of my mini ludum dare 48 entry, pet theft.<br />
-				<br />
-				Any comments on this early version are more than welcome.
-				Scroll down for the game description and rules:<br />
-				<br />
-				<iframe src="ressources/pet_theft.html" width="800" height="600"></iframe>
-				<br />
-				
-				<h2><span style="font-size: large;"><b>Required material:</b></span></h2>
-				<ul>
-					<li>A headset</li>
-					<li>a web browser</li>
-					<li>a friend :)</li>
-				</ul>
-				
-				<h2>
-				<span style="font-size: large;"><b>Game description:</b></span></h2>
-				<div>
-					Pet Theft is a two player infiltration game. The first player (<b>player1</b>), &nbsp;controls a <b>red character&nbsp;</b>
-					<img border="0" src="./ressources/character_red.png" /></a>.
-				</div>
-				<div>
-					Its goal is to steal one of the three pets available in the map: a <b>horse&nbsp;</b>
-					<img border="0" src="./ressources/horse.png" /></a>, a <b>cat&nbsp;</b>
-					<img border="0" src="./ressources/cat.png" /></a>, or a <b>bird&nbsp;</b>
-					<img border="0" src="./ressources/bird.png" /></a>.
-				</div>
-				<div>
-					The actual target is randomly determined at startup, and <b>player1</b> is the only one to know which
-				</div>
-				<div>
-					pet is its real objective.
-				</div>
-				<div><br /></div>
-				<div>
-					On the other hand <b>player2 </b>alternatively controls 3 <b>characters </b>
-					(<b>green&nbsp;</b>
-					<img border="0" src="./ressources/character_green.png" /></a><b>, yellow&nbsp;</b>
-					<img border="0" src="./ressources/character_yellow.png" /></a><b>&nbsp;</b>and <b>blue&nbsp;</b>
-					<img border="0" src="./ressources/character_blue.png" /></a>) to prevent <b>player1 </b>from reaching a target.&nbsp;
-				</div>
-				<div><br/></div>
-				<div>
-					This task is hardened by the fact that the <b>red character</b> is invisible, unless a straight line, free of <b>obstacles </b>
-					can be traced between the <b>red character</b> and any other <b>character</b>.
-				</div>
-				<div>
-					<br />
-					<div> <h2><span style="font-size: large;"><b>Possible actions:</b></span></h2> </div>
-					<div>
-						<div class="separator" style="clear: both; text-align: left;"></div>
-						<ul>
-							<li>
-								<u>Moving a <b>character</b></u><b>&nbsp;</b>is achieved using the <b>WASD </b>keys or the <b>directional arrows</b>.
-								It is recommanded for the <b>player1 </b>to use the&nbsp;<b>WASD&nbsp;</b>keys. An icon in the top right corner indicates
-								which character is to be moved.
-							</li>
-						</ul>
-						<div class="separator" style="clear: both; text-align: left;">
-							<img border="0" src="./ressources/move.gif" height="173" width="200" /></a>
-						</div>
-						<div class="separator" style="clear: both; text-align: left;"> <br /></div>
-						<ul>
-							<li>
-								<u style="text-decoration: underline;">Pushing a <b>crate</b></u><b style="text-decoration: underline;">&nbsp;</b>
-								is done automatically when a <b>character </b>walks into a tile occupied by a <b>crate</b>.
-								Several <b>crates </b>can be pushed at the same time. 
-								<b>Crates </b>won't be pushed into tiles occupied by a <b>wall</b>, a <b>character</b>, or an <b>objective</b>.
-							</li>
-						</ul>
-					</div>
-					<div>
-						<div class="separator" style="clear: both; text-align: left;">
-						<img border="0" src="./ressources/push.gif" height="173" width="200" /></a></div>
-						<div class="separator" style="clear: both; text-align: left;">
-						<br /></div>
-						<ul>
-							<li>The <b>red character</b> is only visible if there are no <b>obstacles </b>between him and at least one other <b>character</b>. <b>Obstacles </b>can be:</li>
-							<ul>
-								<li>
-									a&nbsp;<b>crate&nbsp;</b>
-									<img border="0" src="./ressources/crate.png" /></a>
-								</li>
-								<li>
-									a&nbsp;<b>wall&nbsp;</b>
-									<img border="0" src="./ressources/wall.png" /></a>
-								</li>
-								<li>an&nbsp;<b>objective&nbsp;</b>
-									<img border="0" src="./ressources/bird.png" /></a>
-									<img border="0" src="./ressources/cat.png" /></a>
-									<img border="0" src="./ressources/horse.png" /></a>
-								</li>
-							</ul>
-						</ul>
-					</div>
-					<div class="separator" style="clear: both; text-align: left;"> <br /></div>
-					<img border="0" src="./ressources/see.gif" height="173" width="200" /></a></div>
-					<div class="separator" style="clear: both; text-align: left;">
-					<br /></div>
-					<div class="separator" style="clear: both; text-align: justify;">
-					</div>
-					<ul>
-						<li>
-							Once per game, <b>player1 </b>&nbsp;can press <b>X</b> and create a <b>doppelganger </b>on the tile he is currently occupying. 
-							This can be used to trick <b>player2.</b>
-						</li>
-					</ul>
-					<br />
-					<div class="separator" style="clear: both; text-align: left;">
-					<img border="0" src="./ressources/dop.gif" height="173" width="200" /></a></div>
-					<div style="text-align: left;"> <br /></div>
-				</div>
-				
-				<h2><span style="font-size: large;">In-game walkthrough:</span></h2>
-				<ul>
-					<li>
-						<b>Player1 </b>starts. Before performing its first move, he must make sure his headset is on. After its initial move a <b>sound </b>is played.
-						The <b>sound </b>matches with an animal and indicates to <b>player1 </b>its real <b>objective</b>. <div style="text-align: left;"> <br /></div>
-					</li>
-					<li><b>Player2 </b>plays after, moving the <b>green</b>, <b>yellow </b>and <b>blue characters</b> successively. <div style="text-align: left;"> <br /></div></li>
-					<li>Then it's <b>player1</b>'s turn, and so on. <div style="text-align: left;"> <br /></div></li>
-					<li><b>Player1 </b>wins if the <b>red character "</b>walks" on the <b>objective</b>. <div style="text-align: left;"> <br /></div></li>
-					<li><b>Player2&nbsp;</b>wins if <b>any character "</b>walks" on the&nbsp;<b>red character</b>. <div style="text-align: left;"> <br /></div></li>
-				</ul>
-        </body>
-</html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+        <head>
+                <title>Pet Theft</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        </head>
+        <body>
+                Hi there!<br/>
+				<br />
+				On this page you will find the first playable version of my mini ludum dare 48 entry, pet theft.<br />
+				<br />
+				Any comments on this early version are more than welcome.
+				Scroll down for the game description and rules:<br />
+				<br />
+				<iframe src="ressources/pet_theft.html" width="800" height="600"></iframe>
+				<br />
+				
+				<h2><span style="font-size: large;"><b>Required material:</b></span></h2>
+				<ul>
+					<li>A headset</li>
+					<li>a web browser</li>
+					<li>a friend :)</li>
+				</ul>
+				
+				<h2>
+				<span style="font-size: large;"><b>Game description:</b></span></h2>
+				<div>
+					Pet Theft is a two player infiltration game. The first player (<b>player1</b>), &nbsp;controls a <b>red character&nbsp;</b>
+					<img border="0" src="./ressources/character_red.png" /></a>.
+				</div>
+				<div>
+					Its goal is to steal one of the three pets available in the map: a <b>horse&nbsp;</b>
+					<img border="0" src="./ressources/horse.png" /></a>, a <b>cat&nbsp;</b>
+					<img border="0" src="./ressources/cat.png" /></a>, or a <b>bird&nbsp;</b>
+					<img border="0" src="./ressources/bird.png" /></a>.
+				</div>
+				<div>
+					The actual target is randomly determined at startup, and <b>player1</b> is the only one to know which
+				</div>
+				<div>
+					pet is its real objective.
+				</div>
+				<div><br /></div>
+				<div>
+					On the other hand <b>player2 </b>alternatively controls 3 <b>characters </b>
+					(<b>green&nbsp;</b>
+					<img border="0" src="./ressources/character_green.png" /></a><b>, yellow&nbsp;</b>
+					<img border="0" src="./ressources/character_yellow.png" /></a><b>&nbsp;</b>and <b>blue&nbsp;</b>
+					<img border="0" src="./ressources/character_blue.png" /></a>) to prevent <b>player1 </b>from reaching a target.&nbsp;
+				</div>
+				<div><br/></div>
+				<div>
+					This task is hardened by the fact that the <b>red character</b> is invisible, unless a straight line, free of <b>obstacles </b>
+					can be traced between the <b>red character</b> and any other <b>character</b>.
+				</div>
+				<div>
+					<br />
+					<div> <h2><span style="font-size: large;"><b>Possible actions:</b></span></h2> </div>
+					<div>
+						<div class="separator" style="clear: both; text-align: left;"></div>
+						<ul>
+							<li>
+								<u>Moving a <b>character</b></u><b>&nbsp;</b>is achieved using the <b>WASD </b>keys or the <b>directional arrows</b>.
+								It is recommanded for the <b>player1 </b>to use the&nbsp;<b>WASD&nbsp;</b>keys. An icon in the top right corner indicates
+								which character is to be moved.
+							</li>
+						</ul>
+						<div class="separator" style="clear: both; text-align: left;">
+							<img border="0" src="./ressources/move.gif" height="173" width="200" /></a>
+						</div>
+						<div class="separator" style="clear: both; text-align: left;"> <br /></div>
+						<ul>
+							<li>
+								<u style="text-decoration: underline;">Pushing a <b>crate</b></u><b style="text-decoration: underline;">&nbsp;</b>
+								is done automatically when a <b>character </b>walks into a tile occupied by a <b>crate</b>.
+								Several <b>crates </b>can be pushed at the same time. 
+								<b>Crates </b>won't be pushed into tiles occupied by a <b>wall</b>, a <b>character</b>, or an <b>objective</b>.
+							</li>
+						</ul>
+					</div>
+					<div>
+						<div class="separator" style="clear: both; text-align: left;">
+						<img border="0" src="./ressources/push.gif" height="173" width="200" /></a></div>
+						<div class="separator" style="clear: both; text-align: left;">
+						<br /></div>
+						<ul>
+							<li>The <b>red character</b> is only visible if there are no <b>obstacles </b>between him and at least one other <b>character</b>. <b>Obstacles </b>can be:</li>
+							<ul>
+								<li>
+									a&nbsp;<b>crate&nbsp;</b>
+									<img border="0" src="./ressources/crate.png" /></a>
+								</li>
+								<li>
+									a&nbsp;<b>wall&nbsp;</b>
+									<img border="0" src="./ressources/wall.png" /></a>
+								</li>
+								<li>an&nbsp;<b>objective&nbsp;</b>
+									<img border="0" src="./ressources/bird.png" /></a>
+									<img border="0" src="./ressources/cat.png" /></a>
+									<img border="0" src="./ressources/horse.png" /></a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="separator" style="clear: both; text-align: left;"> <br /></div>
+					<img border="0" src="./ressources/see.gif" height="173" width="200" /></a></div>
+					<div class="separator" style="clear: both; text-align: left;">
+					<br /></div>
+					<div class="separator" style="clear: both; text-align: justify;">
+					</div>
+					<ul>
+						<li>
+							Once per game, <b>player1 </b>&nbsp;can press <b>X</b> and create a <b>doppelganger </b>on the tile he is currently occupying. 
+							This can be used to trick <b>player2.</b>
+						</li>
+					</ul>
+					<br />
+					<div class="separator" style="clear: both; text-align: left;">
+					<img border="0" src="./ressources/dop.gif" height="173" width="200" /></a></div>
+					<div style="text-align: left;"> <br /></div>
+				</div>
+				
+				<h2><span style="font-size: large;">In-game walkthrough:</span></h2>
+				<ul>
+					<li>
+						<b>Player1 </b>starts. Before performing its first move, he must make sure his headset is on. After its initial move a <b>sound </b>is played.
+						The <b>sound </b>matches with an animal and indicates to <b>player1 </b>its real <b>objective</b>. <div style="text-align: left;"> <br /></div>
+					</li>
+					<li><b>Player2 </b>plays after, moving the <b>green</b>, <b>yellow </b>and <b>blue characters</b> successively. <div style="text-align: left;"> <br /></div></li>
+					<li>Then it's <b>player1</b>'s turn, and so on. <div style="text-align: left;"> <br /></div></li>
+					<li><b>Player1 </b>wins if the <b>red character "</b>walks" on the <b>objective</b>. <div style="text-align: left;"> <br /></div></li>
+					<li><b>Player2&nbsp;</b>wins if <b>any character "</b>walks" on the&nbsp;<b>red character</b>. <div style="text-align: left;"> <br /></div></li>
+				</ul>
+        </body>
+</html>
+
 

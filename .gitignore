@@ -1,4 +1,10 @@
 *~ 
-*.aux
-*.log
+*.svn
 *.out
+*.fuse*
+*.bib~
+*.sty~
+*.log
+*.gitignore~
+*.aux
+
