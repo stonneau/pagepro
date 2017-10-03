@@ -73,7 +73,7 @@
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 	% {\fontfamily{pzc}\selectfont\Huge Curriculum vitae}
-	{\selectfont\large\color[HTML]{801010} Post Doctorate - Engineer \\ Computer Graphics and Robotics}
+	{\selectfont\large\color[HTML]{801010} Post Doctorate - Software Engineer \\ Computer Graphics and Robotics}
 	\bigskip
     \end{center}]}
 
